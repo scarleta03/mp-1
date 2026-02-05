@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper{
+    border-radius: 10px;
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ),
+    repeating-linear-gradient( #3eb5b855, #3eb5b8 ); /* used a website to create background gave the css code
+    https://www.magicpattern.design/tools/css-backgrounds */
+}
+
+#nav-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+main h3{
+    text-align: center;
+    margin-bottom: 6%;
+    font-size: calc(2px + 2vw);
+    color: black;
+    text-decoration: underline;
+}
+
+#p1 {
+    font-size: calc(2px + 2vw);
+    background-color: lightblue;
+    padding: 2% 2%;
+}
+
+#p2 {
+    font-size: calc(1px + 1vw);
+    background-color: lightblue;
+    padding: 0% 2%;
+    font-weight: bold;
+}
+
+#p3{
+    font-size: calc(2px + 2vw);
+    background-color: lightblue;
+    padding-top: 20%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+
+}
+
+#p4{
+    font-size: calc(1px + 1vw);
+    background-color: lightblue ;
+    padding: 0% 2%;
+    font-weight: bold;
+}
+
+main{
+    padding: 1% 2%;
+    height: 100vh;
+    width: 70%;
+    text-align: left;
+    font-family:"Courier New", Courier, monospace;
+    margin: 2% 0;
+}
+
+header{
+    padding: 1%;
+    border-radius: 8px;
+    background-color: #000000;
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+nav{
+    border-radius: 8px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    width: 30%;
+}
+nav ul{
+    padding-left: 0;
+    list-style: none;
+
+
+
+}
+nav li{
+    border: 5px solid #ffffff;
+    padding: 1%;
+    width: 80%;
+    margin: 18% auto;
+    text-align: center;
+
+}
+
+nav a{
+    color: #000000;
+    font-size: calc(2px + 1.7vw);
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover{ /* google */
+    background-color: #00f2ff;
+    opacity: 0.5;
+    text-decoration: none;
+    color: #131313;
+}
+
+
+
+footer{
+    padding: 1%;
+    text-align: center;
+}
+@media  screen and (max-width: 1000px) {
+    #nav-main{
+        flex-direction: column;
+    }
+
+    nav, main{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav li{
+        font-size: calc(2px + 2vw);
+        width: 25%;
+        padding: 1%;
+        margin: 0.3%;
+    }
+
+    #p2{
+        flex-direction: column;
+    }
+
+    #p3{
+        flex-direction: column;
+    }
+
+    #p1{
+        flex-direction: column;
+    }
+
+    #p4{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    main{
+        height: 100vh;
+    }
+}
