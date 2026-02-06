@@ -35,6 +35,18 @@ main h3 {
     padding: 2% 2%;
 }
 
+#p2 {
+    font-size: calc(2px + 2vw);
+    background-color: lightblue;
+    padding: 10% 2%;
+}
+
+#p3 {
+    font-size: calc(2px + 2vw);
+    background-color: lightblue;
+    padding: 10% 2%;
+}
+
 main{
     padding: 1% 2%;
     height: 100vh;
@@ -120,6 +132,15 @@ footer{
     #p1{
         flex-direction: column;
     }
+
+    #p2{
+        flex-direction: column;
+    }
+
+    #p3{
+        flex-direction: column;
+    }
+
 
     header{
         text-align: center;
